@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="chk" />
+        <label for="chk" class="switch"> 
+            <span class="slider"></span>
+        </label>
+</body>
+<script>
+    var chk = document.getElementById('chk');
+
+    chk.addEventListener('change', function() {
+    if (chk.checked) {
+        document.body.style.backgroundColor = '#313d59'
+    } else {
+        document.body.style.backgroundColor = '#a7b7db'
+    }
+});
+</script>
+</html>
